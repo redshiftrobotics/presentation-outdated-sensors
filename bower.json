@@ -1,7 +1,7 @@
 {
-  "name": "presentation-sensors",
-  "version": "0.0.0",
-  "dependencies": {
-    "prism": "gh-pages"
-  }
+	"name": "presentation-sensors",
+	"version": "0.0.0",
+	"dependencies": {
+		"prism": "gh-pages"
+	}
 }
