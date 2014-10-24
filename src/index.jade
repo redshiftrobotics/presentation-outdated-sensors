@@ -13,59 +13,110 @@ html
 
 			section
 				h1 Sensors
+				h2 Written and presented by AJ
 
 			section
-				h2 Keyboard Interaction
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+				h2.bullet What the heck? Sensors?
+				h3.bullet Sensors are things that we put on the robot
+				h3.bullet We use sensors to get information about the environment that the robot is in
+				h3.bullet Most of our sensors are standard LEGO sensors, although some are from HiTechnic
+				h3.bullet Sensors are connected to the NXT using I2C cables
+				h3.bullet (You don't need to worry about this last bit unless you're a programmer.)
 
 			section
-				h2 Touch Interaction
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+				h2.bullet The Touch Sensor
+				h3.bullet <img src="images/touchsensor.png" alt="NXT Touch sensor" class="sensor-circle" />
+				h3.bullet The touch sensor basically returns true or false:
+				h3.bullet Is the button pressed, or is it not pressed?
+				h3.bullet Typically we use touch sensors for limit switches
+				h3.bullet These help us know when to stop a motor so that it won't damage the robot. 
+				
+			section
+				h2.bullet The Color Sensor
+				h3.bullet <img src="images/colorsensor.png" alt="NXT Color sensor" class="sensor-circle" />
+				h3.bullet The color sensor returns what color is in front of the sensor. It works at very close ranges.
+				h3.bullet Typically we use color sensors to write line following programs
+				h3.bullet This year we <em>may</em> use color sensors to detect when we're on the ramp.
 
 			section
-				h2 Responsive Slides
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+				h2.bullet The Light Sensor
+				h3.bullet <img src="images/lightsensor.png" alt="NXT Light sensor" class="sensor-circle" />
+				h3.bullet The light sensor senses light intensity.
+				h3.bullet We tend not to use this sensor a lot, although this year we may use it for the ramp.
+			
+			section
+				h2.bullet The Sound Sensor
+				h3.bullet <img src="images/soundsensor.png" alt="NXT Sound sensor" class="sensor-circle" />
+				h3.bullet The sound sensor returns the sound intensity of the environment.
+				h3.bullet We almost never use this sensor.
 
 			section
-				h2 Bullet List
-				h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-				ul
-					li Bullet 1
-					li Bullet 2
-					li Bullet 3
+				h2.bullet The Ultrasonic Sensor
+				h3.bullet <img src="images/ultrasonicsensor.png" alt="NXT Ultrasonic sensor" class="sensor-circle" />
+				h3.bullet The ultrasonic sensor tells us how far away something is.
+				h3.bullet It works in the same way bats do <a href="https://en.wikipedia.org/wiki/Animal_echolocation">echolocation</a>.
+				h3.bullet Typically we don't use this sensor, especially because it's very inaccurate. (We might use it for the ramp, though. Maybe.)
 
 			section
-				h2 Syntax Highlighting
-				h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-				pre
-					code.language-javascript.
-						bespoke.from('article', [
-							classes(),
-							keys(),
-							touch(),
-							bullets('li, .bullet')
-						]);
-
-			section(data-bespoke-hash='named-route')
-				h2 Named Route
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-				p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-			section.emphatic-text(data-bespoke-backdrop='emphatic')
-				h2 Emphatic Slide!
-				h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+				h2.bullet The HiTechnic Sensor
+				h3.bullet <img src="images/hitechnic_generic.png" alt="Generic HiTechnic sensor" class="sensor-circle" />
+				h3.bullet Psych! This is like 5 different sensors.
+				h3.bullet HiTechnic sensors all look the same, so they're labeled on the bottom.
 
 			section
-				h2.bullet Just the beginning...
-				br
-				ul
-					li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-					li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-					li Edit JavaScript in <em>'src/scripts/main.js'</em>
-				br
-				ul
-					li
-						strong Enjoy! :)
-						a(href='http://twitter.com/markdalgleish')	-@markdalgleish
+				h2.bullet The HiTechnic Color Sensor
+				h3.bullet <img src="images/hitechnic_colorsensor.png" alt="HiTechnic Color sensor" class="sensor-circle" />
+				h3.bullet The HiTechnic color sensor is exactly the same as the NXT color sensor
+				h3.bullet It's just a lot more accurate.
+				h3.bullet I said earlier that we use "color sensors". This does not include the NXT color sensor, because this one is by far superior.
+			
+			section
+				h2.bullet The HiTechnic Infrared Seeker
+				h3.bullet <img src="images/hitechnic_infraredseeker.png" alt="HiTechnic Infrared Seeker" class="sensor-circle" />
+				h3.bullet The HiTechnic infrared seeker returns the intensity of infrared. We can get 5 values out of this, in a fan, from the sensor.
 
+			section
+				img(src='images/irseeker_positions.svg', alt='Diagram of the different value positions on the IR sensor', width='512', height='512')
+
+			section
+				h2 The HiTechnic Infrared Seeker
+				h3 <img src="images/hitechnic_infraredseeker.png" alt="HiTechnic Infrared Seeker" class="sensor-circle" />
+				h3.bullet The HiTechnic infrared seeker returns the intensity of infrared. We can get 5 values out of this, in a fan, from the sensor.
+				h3.bullet We use this to seek the IR beacon in autonomous.
+
+			section
+				h2.bullet The HiTechnic Magnetic Sensor
+				h3.bullet <img src="images/hitechnic_magneticsensor.png" alt="HiTechnic Magnetic sensor" class="sensor-circle" />
+				h3.bullet The HiTechnic magnetic sensor detects magnetic fields.
+				h3.bullet We never use it, because there's no use for it, along with the fact that the motors severely interfere with it.
+
+			section
+				h2.bullet The HiTechnic Accelerometor
+				h3.bullet <img src="images/hitechnic_accelerometer.png" alt="HiTechnic Accelerometer" class="sensor-circle" />
+				h3.bullet The HiTechnic accelerometer detects acceleration in space. It's accurate in the long term, but not in the short term.
+				h3.bullet We want to use it to help determine the robot's exact location in space during autonomous.
+
+			section
+				h2.bullet The HiTechnic Gyroscope
+				h3.bullet <img src="images/hitechnic_gyroscope.png" alt="HiTechnic Accelerometer" class="sensor-circle" />
+				h3.bullet The HiTechnic gyroscope detects the robot's orientation in space. It's accurate in the short term, but not the long term.
+				h3.bullet For this reason, we want to pair the gyro and the accelerometer together to achieve long-term, exact positioning data.
+				h3.bullet This is currently an open research question.
+
+			section
+				h2.bullet Bonus points! The I2C multiplexor
+				h3.bullet <img src="i2cmultiplexor.png" alt="I2C multiplexor" class="sensor-circle"/>
+				h3.bullet The I2C multiplexor increases the amount of I2C ports that can be used, and hence, the amount of sensors that can be used.
+				h3.bullet Basically, it's like a USB hub, but for NXT ports.
+				h3.bullet We don't like to use it, mostly because it's too complicated to work with.
+
+			section
+				h2.bullet Access this presention again
+				h3.bullet <a href="http://saasrobotics.com/presentation-sensors">http://saasrobotics.com/presentation-sensors</a>
+				h4.bullet And <a href="https://github.com/saasrobotics/presentation-sensors">here's the source</a>.
+				
+			section
+				h2.bullet Thanks!
+				h3.bullet I've been AJ. If you have any questions, talk to me when I'm at practice.
+				
 		script(src='build/build.js')
