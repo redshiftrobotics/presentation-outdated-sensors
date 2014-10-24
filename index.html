@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sensors</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Sensors</h1>
+        <h2>Written and presented by AJ</h2>
+      </section>
+      <section>
+        <h2 class="bullet">What the heck? Sensors?</h2>
+        <h3 class="bullet">Sensors are things that we put on the robot</h3>
+        <h3 class="bullet">We use sensors to get information about the environment that the robot is in</h3>
+        <h3 class="bullet">Most of our sensors are standard LEGO sensors, although some are from HiTechnic</h3>
+        <h3 class="bullet">Sensors are connected to the NXT using I2C cables</h3>
+        <h3 class="bullet">(You don't need to worry about this last bit unless you're a programmer.)</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The Touch Sensor</h2>
+        <h3 class="bullet"><img src="images/touchsensor.png" alt="NXT Touch sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The touch sensor basically returns true or false:</h3>
+        <h3 class="bullet">Is the button pressed, or is it not pressed?</h3>
+        <h3 class="bullet">Typically we use touch sensors for limit switches</h3>
+        <h3 class="bullet">These help us know when to stop a motor so that it won't damage the robot. </h3>
+      </section>
+      <section>
+        <h2 class="bullet">The Color Sensor</h2>
+        <h3 class="bullet"><img src="images/colorsensor.png" alt="NXT Color sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The color sensor returns what color is in front of the sensor. It works at very close ranges.</h3>
+        <h3 class="bullet">Typically we use color sensors to write line following programs</h3>
+        <h3 class="bullet">This year we <em>may</em> use color sensors to detect when we're on the ramp.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The Light Sensor</h2>
+        <h3 class="bullet"><img src="images/lightsensor.png" alt="NXT Light sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The light sensor senses light intensity.</h3>
+        <h3 class="bullet">We tend not to use this sensor a lot, although this year we may use it for the ramp.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The Sound Sensor</h2>
+        <h3 class="bullet"><img src="images/soundsensor.png" alt="NXT Sound sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The sound sensor returns the sound intensity of the environment.</h3>
+        <h3 class="bullet">We almost never use this sensor.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The Ultrasonic Sensor</h2>
+        <h3 class="bullet"><img src="images/ultrasonicsensor.png" alt="NXT Ultrasonic sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The ultrasonic sensor tells us how far away something is.</h3>
+        <h3 class="bullet">It works in the same way bats do <a href="https://en.wikipedia.org/wiki/Animal_echolocation">echolocation</a>.</h3>
+        <h3 class="bullet">Typically we don't use this sensor, especially because it's very inaccurate. (We might use it for the ramp, though. Maybe.)</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The HiTechnic Sensor</h2>
+        <h3 class="bullet"><img src="images/hitechnic_generic.png" alt="Generic HiTechnic sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">Psych! This is like 5 different sensors.</h3>
+        <h3 class="bullet">HiTechnic sensors all look the same, so they're labeled on the bottom.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The HiTechnic Color Sensor</h2>
+        <h3 class="bullet"><img src="images/hitechnic_colorsensor.png" alt="HiTechnic Color sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The HiTechnic color sensor is exactly the same as the NXT color sensor</h3>
+        <h3 class="bullet">It's just a lot more accurate.</h3>
+        <h3 class="bullet">I said earlier that we use "color sensors". This does not include the NXT color sensor, because this one is by far superior.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The HiTechnic Infrared Seeker</h2>
+        <h3 class="bullet"><img src="images/hitechnic_infraredseeker.png" alt="HiTechnic Infrared Seeker" class="sensor-circle" /></h3>
+        <h3 class="bullet">The HiTechnic infrared seeker returns the intensity of infrared. We can get 5 values out of this, in a fan, from the sensor.</h3>
+      </section>
+      <section><img src="images/irseeker_positions.svg" alt="Diagram of the different value positions on the IR sensor" width="512" height="512"></section>
+      <section>
+        <h2>The HiTechnic Infrared Seeker</h2>
+        <h3><img src="images/hitechnic_infraredseeker.png" alt="HiTechnic Infrared Seeker" class="sensor-circle" /></h3>
+        <h3 class="bullet">The HiTechnic infrared seeker returns the intensity of infrared. We can get 5 values out of this, in a fan, from the sensor.</h3>
+        <h3 class="bullet">We use this to seek the IR beacon in autonomous.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The HiTechnic Magnetic Sensor</h2>
+        <h3 class="bullet"><img src="images/hitechnic_magneticsensor.png" alt="HiTechnic Magnetic sensor" class="sensor-circle" /></h3>
+        <h3 class="bullet">The HiTechnic magnetic sensor detects magnetic fields.</h3>
+        <h3 class="bullet">We never use it, because there's no use for it, along with the fact that the motors severely interfere with it.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The HiTechnic Accelerometor</h2>
+        <h3 class="bullet"><img src="images/hitechnic_accelerometer.png" alt="HiTechnic Accelerometer" class="sensor-circle" /></h3>
+        <h3 class="bullet">The HiTechnic accelerometer detects acceleration in space. It's accurate in the long term, but not in the short term.</h3>
+        <h3 class="bullet">We want to use it to help determine the robot's exact location in space during autonomous.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">The HiTechnic Gyroscope</h2>
+        <h3 class="bullet"><img src="images/hitechnic_gyroscope.png" alt="HiTechnic Accelerometer" class="sensor-circle" /></h3>
+        <h3 class="bullet">The HiTechnic gyroscope detects the robot's orientation in space. It's accurate in the short term, but not the long term.</h3>
+        <h3 class="bullet">For this reason, we want to pair the gyro and the accelerometer together to achieve long-term, exact positioning data.</h3>
+        <h3 class="bullet">This is currently an open research question.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Bonus points! The I2C multiplexor</h2>
+        <h3 class="bullet"><img src="i2cmultiplexor.png" alt="I2C multiplexor" class="sensor-circle"/></h3>
+        <h3 class="bullet">The I2C multiplexor increases the amount of I2C ports that can be used, and hence, the amount of sensors that can be used.</h3>
+        <h3 class="bullet">Basically, it's like a USB hub, but for NXT ports.</h3>
+        <h3 class="bullet">We don't like to use it, mostly because it's too complicated to work with.</h3>
+      </section>
+      <section>
+        <h2 class="bullet">Access this presention again</h2>
+        <h3 class="bullet"><a href="http://saasrobotics.com/presentation-sensors">http://saasrobotics.com/presentation-sensors</a></h3>
+        <h4 class="bullet">And <a href="https://github.com/saasrobotics/presentation-sensors">here's the source</a>.</h4>
+      </section>
+      <section>
+        <h2 class="bullet">Thanks!</h2>
+        <h3 class="bullet">I've been AJ. If you have any questions, talk to me when I'm at practice.</h3>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
